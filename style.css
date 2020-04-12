@@ -2,7 +2,6 @@
   font-family: 'A Gothique Time';
   src: url('A\ Gothique\ Time\ .ttf')
 }
-
 :root {
   --color-info: rgb(207, 8, 8);
 }
@@ -16,7 +15,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171919",endColorstr="#000000",GradientType=1);
   color: #fff;
 }
-
 .container {
   display: flex;
   width: 100vw;
