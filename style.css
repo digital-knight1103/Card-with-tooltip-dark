@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'A Gothique Time';
+  src: url('A\ Gothique\ Time\ .ttf')
+}
+
+:root {
+  --color-info: rgb(207, 8, 8);
+}
+
+body {
+  font-family: 'Monserat', sans-serif;
+  background: rgb(23,25,25);
+  background: -moz-radial-gradient(circle, rgba(23,25,25,0.9303922252494747) 60%, rgba(0,0,0,0.725910432532388) 100%);
+  background: -webkit-radial-gradient(circle, rgba(23,25,25,0.9303922252494747) 60%, rgba(0,0,0,0.725910432532388) 100%);
+  background: radial-gradient(circle, rgba(23,25,25,0.9303922252494747) 60%, rgba(0,0,0,0.725910432532388) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#171919",endColorstr="#000000",GradientType=1);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.back-text {
+  margin: 0 0;
+  position: fixed;
+  overflow: hidden;
+  font-family: 'A Gothique Time';
+  color: #c6c6c6;
+  font-size:3.5rem;
+  opacity: 0.05;
+}
+
+.card {
+  background-color: black;
+  position: relative;
+  margin: 25px;
+  border-radius: 70px 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px #0f2027;
+}
+
+.card .image img {
+  display: block;
+  width: 300px;
+  height: 450px;
+  opacity: 0.3;
+
+}
+
+.card .title {
+  position: absolute;
+  font-family:'A Gothique Time';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 13px;
+  padding: 20px 20px 20px;
+  font-size: 6rem;
+}
+
+.card .author {
+  font-size: 1rem;
+  opacity: 0.6;
+  letter-spacing: 0px;
+}
+
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0,0,0,0.3);
+  padding: 10px 25px;
+  cursor: help;
+  opacity: 0.9;
+
+  clip-path: circle(5% at 89% 9%);
+  transition: background-color 700ms, clip-path 700ms;
+}
+
+.info h2 {
+  text-align: center;
+}
+
+.info:hover {
+  background-color: var(--color-info);
+  clip-path: circle(100%);
+}
+
+.info .icon {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  
+  transition: color 700ms;
+}
+
+.info:hover .icon{
+  color: var(--color-info);
+}
+
+.icon-svg {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
