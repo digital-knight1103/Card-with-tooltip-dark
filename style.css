@@ -83,7 +83,7 @@ body {
   background-color: rgba(0,0,0,0.3);
   padding: 10px 25px;
   cursor: help;
-  opacity: 0.9;
+  opacity: 0.95;
 
   clip-path: circle(5% at 89% 9%);
   transition: background-color 700ms, clip-path 700ms;
@@ -91,6 +91,7 @@ body {
 
 .info h2 {
   text-align: center;
+  position: relative;
 }
 
 .info:hover {
@@ -112,9 +113,14 @@ body {
   color: var(--color-info);
 }
 
-.icon-svg {
-  display: block;
-  width: 50px;
-  height: 50px;
+.info .icon-svg {
+  position: absolute;
+  top: 30%;
+  left: 50%;
   margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  opacity: 0.3;
 }
+
